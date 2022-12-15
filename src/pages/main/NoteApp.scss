@@ -1,0 +1,128 @@
+/* NoteApp.scss */
+
+$dark-color: #333;
+$light-color: #fff;
+$dark-button-color: #555;
+$light-button-color: #ddd;
+$dark-input-color: #444;
+$light-input-color: #eee;
+$dark-border-color: #555;
+$light-border-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  gap: 10px;
+}
+
+button {
+  height: 30px;
+  width: 100%;
+}
+
+.note__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  #title-text {
+    height: 30px !important;
+    font-size: 18px;
+  }
+
+  #input-text {
+    height: 200px;
+    font-size: 14px;
+  }
+}
+
+.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+  width: 100vw;
+  height: 100vh;
+
+  html {
+    background: $dark-color;
+    body {
+      background: $dark-color;
+    }
+  }
+
+  button {
+    background-color: $dark-button-color;
+    color: $light-color;
+    width: 100%;
+  }
+
+  input {
+    background-color: $dark-input-color;
+    color: $light-color;
+    border: 1px solid $dark-border-color;
+    width: 100%;
+  }
+
+  li {
+    background: $dark-input-color;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+  width: 100vw;
+  height: 100vh;
+
+  html {
+    background: $light-color;
+    body {
+      background: $light-color;
+    }
+  }
+
+  button {
+    background-color: $light-button-color;
+    color: $dark-color;
+    width: 100%;
+  }
+
+  input {
+    background-color: $light-input-color;
+    color: $dark-color;
+    border: 1px solid $light-border-color;
+    width: 100%;
+  }
+
+  li {
+    background: $light-input-color;
+    width: 100%;
+  }
+}
